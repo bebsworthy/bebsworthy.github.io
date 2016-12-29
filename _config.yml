@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: A simple business card site
+title: Hi I'm Boyd.
 email: boyd@boyd.red
 description: Boyd Ebsworthy
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -30,3 +30,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# for jekyll serve (used for mobile testing on local network and hopefully ignored by github)
+host: 0.0.0.0

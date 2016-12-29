@@ -1,0 +1,196 @@
+
+/* Styling */
+h1, h2, h3, h4 {
+  font-family: "Roboto Condensed", "Helvetica Neue Condensed", Arial, sans-serif;
+  font-weight: 700;
+}
+.personal-info-wrapper {
+  border: 1vh solid #D9000E;
+}
+a.social-button {
+  display: inline-block;
+  width: 32px;
+}
+
+/* Structure */
+
+
+/* LANDSCAPE */
+@media (orientation: landscape) {
+  .personal-info-wrapper {
+    height: 80vh;
+    padding: 9vh 5vw 9vh 5vw;
+  }
+
+  .h-card {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .salutation {
+
+  }
+
+  .contact-methods {
+    min-width: 50vw;
+    margin-left:10vw;
+
+      div.www { display: none; }
+      div.email {
+        margin-top: 2vh;
+        padding-bottom: 5vh;
+        text-align: center;
+        #border-bottom: 1px solid $brand-color;
+        object {
+          width:8vw;
+          display:inline-block;
+          vertical-align: middle;
+        }
+        h2 {
+          display: inline-block;
+          vertical-align: middle;
+          padding:0;
+          margin:0;
+          margin-left: 3vw;
+        }
+      }
+
+      div.phone {
+        margin-top: 6vh;
+        text-align: center;
+        .title-wrapper {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right:5vw;
+        }
+        p {
+          margin-top:-2vh;
+        }
+        h2 {
+          display: inline-block;
+          vertical-align: middle;
+          padding:0;
+          margin:0;
+        }
+        object {
+          width:7vw;
+          display:inline-block;
+          vertical-align: middle;
+          transform: rotate(16deg);
+        }
+      }
+
+
+      div.vcard {
+
+        position: fixed;
+        bottom: 4vh;
+        right: 11vh;
+
+        a {
+          display: flex;
+          align-items: center;
+        }
+
+        object {
+          width: 38px;
+          display:block;
+          padding: 0 2vh 2vh 0;
+        }
+      }
+
+      div.social {
+        position: fixed;
+        bottom: 4vh;
+        left: 10vw;
+      }
+
+  }
+}
+
+/* PORTRAIT */
+@media (orientation: portrait) {
+  .personal-info-wrapper {
+    height: 88vh;
+    padding: 5vh 9vw 5vh 9vw;
+  }
+
+  .personal-info {
+    display:block;
+    h1 {
+      font-size: 10.5vw;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 9.5vw;
+      margin-bottom: 0;
+    }
+
+    div.primary-contact-methods {
+
+      display: flex; /* or inline-flex */
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2vh;
+      margin-top: 7vh;
+    }
+
+    div.contact-method {
+      flex-grow: 1;
+      text-align: center;
+      min-width: 30vw;
+      a {
+        display: inline-block;
+       }
+       object {
+         display:block;
+         margin:0;
+       }
+    }
+    div.www { display: none; }
+    div.email {
+      border-right: 1px solid $text-color;
+      object {
+        padding: 8.5vh 0 2vh 0;
+
+      }
+    }
+
+    div.phone {
+      p {
+        margin-top:-2vh;
+      }
+      object {
+        width: 14vw;
+        transform: rotate(16deg);
+        margin-left: 6vh;
+      }
+    }
+
+    div.vcard {
+
+      margin-top: 10vh;
+      a {
+        display: flex;
+        align-items: center;
+      }
+
+      object {
+        width: 15vw;
+        display:block;
+            padding: 0 2vh 2vh 0;
+      }
+    }
+
+    div.social {
+      position: fixed;
+      top: 90vh;
+      left: 61vw;
+    }
+
+
+  }
+
+}

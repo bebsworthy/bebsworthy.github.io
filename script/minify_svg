@@ -1,0 +1,4 @@
+
+
+svgo -f icon-src -o _includes/icons
+svgo -f icon-src/social-button -o _includes/icons/social-button

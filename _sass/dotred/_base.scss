@@ -23,6 +23,11 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
 }
 
 
@@ -188,7 +193,7 @@ pre {
 
 /**
  * Icons
- */
+
 .icon > svg {
   display: inline-block;
   vertical-align: middle;
@@ -197,3 +202,4 @@ pre {
     fill: $grey-color;
   }
 }
+*/
