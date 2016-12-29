@@ -1,0 +1,100 @@
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
+
+/** Basic styling */
+body { font: 400 16px/1.5 "Roboto", "Helvetica Neue", Arial, sans-serif; color: #95989A; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; line-height: 1.5; }
+
+/** Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 15px; }
+
+/** Images */
+img { max-width: 100%; vertical-align: middle; }
+
+/** Figures */
+figure > img { display: block; }
+
+figcaption { font-size: 14px; }
+
+/** Lists */
+ul, ol { margin-left: 30px; }
+
+li > ul, li > ol { margin-bottom: 0; }
+
+/** Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+/** Links */
+a { color: #95989A; text-decoration: none; }
+a:visited { color: #6f7274; }
+a:hover { color: #95989A; text-decoration: underline; }
+
+/** Blockquotes */
+blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+blockquote > :last-child { margin-bottom: 0; }
+
+/** Code formatting */
+pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+
+code { padding: 1px 5px; }
+
+pre { padding: 8px 12px; overflow-x: auto; }
+pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+/** Wrapper
+
+.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width:         calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: $spacing-unit; padding-left: $spacing-unit; @extend %clearfix;
+ @include media-query($on-laptop) { max-width: -webkit-calc(800px - (30px)); max-width:         calc(800px - (30px)); padding-right: $spacing-unit / 2; padding-left: $spacing-unit / 2; }
+}
+*/
+/** Clearfix */
+/** Icons
+
+.icon > svg { display: inline-block; vertical-align: middle;
+ path { fill: $grey-color; }
+}
+*/
+/* Styling */
+h1, h2, h3, h4 { font-family: "Roboto Condensed", "Helvetica Neue Condensed", Arial, sans-serif; font-weight: 700; }
+
+.personal-info-wrapper { border: 1vh solid #D9000E; }
+
+a.social-button { display: inline-block; width: 32px; }
+
+/* Structure */
+/* LANDSCAPE */
+@media (orientation: landscape) { .personal-info-wrapper { height: 80vh; padding: 9vh 5vw 9vh 5vw; }
+  .personal-info-wrapper h1 { font-size: 10.5vh; margin-bottom: 0; }
+  .personal-info-wrapper h2 { font-size: 9.5vh; margin-bottom: 0; }
+  .h-card { display: flex; align-items: flex-start; }
+  .contact-methods { min-width: 50vw; margin-left: 10vw; }
+  .contact-methods div.www { display: none; }
+  .contact-methods div.email { margin-top: 2vh; padding-bottom: 5vh; text-align: center; #border-bottom: 1px solid #95989A; }
+  .contact-methods div.email object { width: 8vw; display: inline-block; vertical-align: middle; }
+  .contact-methods div.email h2 { display: inline-block; vertical-align: middle; padding: 0; margin: 0; margin-left: 3vw; }
+  .contact-methods div.phone { margin-top: 6vh; text-align: center; }
+  .contact-methods div.phone .title-wrapper { display: inline-block; vertical-align: middle; margin-right: 5vw; }
+  .contact-methods div.phone p { margin-top: -2vh; }
+  .contact-methods div.phone h2 { display: inline-block; vertical-align: middle; padding: 0; margin: 0; }
+  .contact-methods div.phone object { width: 7vw; display: inline-block; vertical-align: middle; transform: rotate(16deg); }
+  .contact-methods div.vcard { position: fixed; bottom: 4vh; right: 11vh; }
+  .contact-methods div.vcard a { display: flex; align-items: center; }
+  .contact-methods div.vcard object { width: 38px; display: block; padding: 0 2vh 2vh 0; }
+  .contact-methods div.social { position: fixed; bottom: 5.5vh; left: 10vw; } }
+/* PORTRAIT */
+@media (orientation: portrait) { .personal-info-wrapper { height: 88vh; padding: 5vh 9vw 5vh 9vw; }
+  .personal-info { display: block; }
+  .personal-info h1 { font-size: 10.5vw; margin-bottom: 0; }
+  .personal-info h2 { font-size: 9.5vw; margin-bottom: 0; }
+  .personal-info div.primary-contact-methods { display: flex; /* or inline-flex */ flex-direction: row; align-items: center; justify-content: center; padding-bottom: 2vh; margin-top: 7vh; }
+  .personal-info div.contact-method { flex-grow: 1; text-align: center; min-width: 30vw; }
+  .personal-info div.contact-method a { display: inline-block; }
+  .personal-info div.contact-method object { display: block; margin: 0; }
+  .personal-info div.www { display: none; }
+  .personal-info div.email { border-right: 1px solid #95989A; }
+  .personal-info div.email object { padding: 8.5vh 0 2vh 0; }
+  .personal-info div.phone p { margin-top: -2vh; }
+  .personal-info div.phone object { width: 14vw; transform: rotate(16deg); margin-left: 6vh; }
+  .personal-info div.vcard { margin-top: 10vh; }
+  .personal-info div.vcard a { display: flex; align-items: center; }
+  .personal-info div.vcard object { width: 15vw; display: block; padding: 0 2vh 2vh 0; }
+  .personal-info div.social { position: fixed; top: 90vh; left: 61vw; } }
