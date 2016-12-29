@@ -21,6 +21,7 @@ url: "http://boyd.red" # the base hostname & protocol for your site, e.g. http:/
 twitter_username: ""
 github_username:  "bebsworthy"
 repository: bebsworthy/bebsworthy.github.io
+google_tagmanager: GTM-KNWGBDG
 
 # Build settings
 markdown: kramdown
